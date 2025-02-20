@@ -1,0 +1,27 @@
+.bg{
+  background: linear-gradient(to top, #324b2e, #fdfdfdcb);
+}
+.bg2{
+  background: linear-gradient( #fdfdfdcb,  #324b2e);
+  box-shadow: inset 2px 2px 2cqw  #324b2e;
+}
+.bg3{
+  background: linear-gradient(to right, #324b2e, #fdfdfde1);
+  
+  box-shadow: inset 2px 2px 2cqw  #324b2e;
+}
+.bg4{
+  background: linear-gradient(to right, #324b2e, #fdfdfdfa);
+  box-shadow: inset 2px 2px 2cqw  #324b2e;
+
+}
+.bg5{
+  background: linear-gradient(to right, #ffffff, #fdfdfdfa);
+  box-shadow: inset 2px 2px 2cqw  #586c55;
+.input{
+  background-color: #324b2e00;
+}
+.input{
+  background-color: #324b2e00;
+}
+}
