@@ -64,7 +64,7 @@ const Review = ({ User,setUser,setMobile, setReviewMessage,setEmail,ReviewMessag
     </div>
 
 
-    <div className='p-5 rounded-xl bg-[#fdfdfdcb] mb-[2rem]  flex flex-col md:w-[50%] w-[90%]'>
+    <div className='p-5 rounded-xl bg-[#fdfdfdcb] mb-[4rem]  flex flex-col md:w-[50%] w-[90%]'>
         {
             review.map((detail)=>(
                 <>
