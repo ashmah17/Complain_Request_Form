@@ -8,10 +8,9 @@ const Complaining = () => {
         {title:'Phone Address :'}
     ]
   return (
-    <div className=' w-full h-[100vh] bg flex justify-center items-center'>
-      <div className="w-[full] h-[50vh]">
-        <span         
-            className=" bg2 w-[48vh] h-[48vh] md:w-[70vh] md:h-[70vh] rounded-full absolute md:left-[-8rem] md:top-[-12rem]  left-[-5rem] top-[-7rem]"></span>
+    <div className=' w-full h-[100vh] bg flex flex-col justify-between items-center '>
+      <div className="w-full relative h-[30vh]  ">
+      <span className=" bg2 w-[48vh] h-[48vh] md:w-[70vh] md:h-[70vh] rounded-full absolute md:left-[-8rem] md:top-[-12rem]  left-[-5rem] top-[-7rem]"></span>
         <motion.span 
          transition={{ duration: 2, repeat:Infinity, repeatType:'loop',  ease: "easeInOut"}}
          animate={{
@@ -28,7 +27,7 @@ const Complaining = () => {
              y: [0, -10, 0, -10, 0], 
            }}
         
-            className=" w-[4.5rem] h-[4.5rem] md:w-[6rem] md:h-[6rem]  bg4 absolute left-[8rem] top-[9rem] md:left-[6rem] md:top-[13rem] rounded-full z-40 transision-all duration-600 ease "></motion.span>
+            className=" w-[4.5rem] h-[4.5rem] md:w-[6rem] md:h-[6rem]  bg4 absolute left-[8rem] bottom-[1rem] md:left-[6rem] md:top-[13rem] rounded-full z-40 transision-all duration-600 ease "></motion.span>
        < motion.span 
        initial={{x:0, y:0}}
        transition={{ duration: 2, repeat:Infinity, repeatType:'loop',  ease: "easeInOut"}}
@@ -37,12 +36,13 @@ const Complaining = () => {
              y: [10, 0, 0, 0, 10], 
            }}
         
-       className=" w-[2.2rem] h-[2.2rem] bg5 absolute left-[19rem] top-[3rem] md:left-[26rem] md:top-[3rem] rounded-full z-40 transision-all duration-600 ease "></motion.span>
+       className=" w-[2.2rem] h-[2.2rem] bg5 absolute right-[3.8rem] top-[3rem] md:left-[26rem] md:top-[3rem] rounded-full z-40 transision-all duration-600 ease "></motion.span>
         <span className=" border-[#aeb8ac] border-[.2rem] border w-[35vh] h-[35vh] md:w-[50vh] md:h-[50vh] rounded-full absolute left-[4.5rem] top-[-5rem] md:left-[5rem] md:top-[-4rem]" ></span>
+      
       </div>
 
 
-      <div className='p-5 rounded-xl bg-[#fdfdfdcb] mt-[14rem] flex flex-col md:w-[50%] w-[80%]'>
+      <div className='p-5 rounded-xl bg-[#fdfdfdcb] mb-[2rem]  flex flex-col md:w-[50%] w-[80%]'>
           {
               details.map((detail, index)=>(
                   <>
