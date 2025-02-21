@@ -1,12 +1,33 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom'
 
-const Complaining = () => {
-    const details =[
-        {title:'Email :'},
-        {title:'Phone Number :'},
-        {title:'Phone Address :'}
-    ]
+const Complaining = ({complain,User,setUser,setMobile, setComplainMessage,setEmail, ComplainMessage, Email, Mobile}) => {
+
+  const handleSubmit=()=>{
+    if(ComplainMessage && User &&  Email && Mobile){
+      const complaindata = {ComplainMessage,User, Email, Mobile}
+
+      let storedComplain = JSON.parse(localStorage.getItem('complain'));
+
+        if(!Array.isArray(storedComplain)){
+         storedComplain =[]
+        }
+        storedComplain.push(complaindata);
+      localStorage.setItem('complain', JSON.stringify(storedComplain));
+
+      alert(`${User} Your Complain will be reviewed`)
+      setUser('')
+      setMobile('')
+      setComplainMessage('')
+      setEmail('')
+
+
+    }else{
+      alert('Submit your Complain')
+    }
+  }
+    
   return (
     <div className=' w-full h-[100vh] bg flex flex-col justify-between items-center '>
       <div className="w-full relative h-[30vh]  ">
@@ -42,21 +63,24 @@ const Complaining = () => {
       </div>
 
 
-      <div className='p-5 rounded-xl bg-[#fdfdfdcb] mb-[2rem]  flex flex-col md:w-[50%] w-[80%]'>
-          {
-              details.map((detail, index)=>(
-                  <>
-                 <span className="shadow-xl items-center rounded flex h-30  mb-2 ">
-                    <label className=" ml-4 w-[28%] text-gray-400">{detail.title}</label>
-                    <input type="text" className="bg-transparent outline-none rounded w-full p-3" />
-                </span>
-              </>
-              ))
-          }
-        <textarea name="" placeholder='Message' id="" className=" shadow-xl bg-transparent outline-none p-3 rounded h-[6rem]">
-
-        </textarea>
-        <button className="p-3 rounded bg-[#586c55;] text-white mt-4">Submit</button>
+      <div className='p-5 rounded-xl bg-[#fdfdfdcb] mb-[2rem]  flex flex-col md:w-[50%] w-[90%]'>
+             {
+                 complain.map((detail)=>(
+                     <>
+                    <span 
+                       key={detail.id} 
+                       className="shadow-xl items-center rounded flex h-30   mb-3 ">
+                       <label className=" ml-4 w-[28%] text-gray-400">{detail.title}</label>
+                       <input type="text" value={detail.value} onChange={detail.change} className="bg-transparent outline-none rounded w-full p-3"  />
+                   </span>
+                 </>
+                 ))
+             }
+           <Link to='/review'>
+           
+               <p className=" text-right m-2 cursor-pointer text-gray-500">Review?</p>
+           </Link>
+           <button onClick={handleSubmit} className="p-3 rounded bg-[#586c55;] text-white mt-4">Submit</button>
       </div>
     </div>
   )
