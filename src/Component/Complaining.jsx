@@ -31,7 +31,7 @@ const Complaining = ({complain,User,setUser,setMobile, setComplainMessage,setEma
   return (
     <div className=' w-full h-[100vh] bg flex flex-col justify-between items-center '>
       <div className="w-full relative h-[30vh]  ">
-      <span className=" bg2 w-[45vh] h-[45vh] md:w-[70vh] md:h-[70vh] rounded-full absolute md:left-[-8rem] md:top-[-12rem]  left-[-5rem] top-[-7rem]"></span>
+      <span className=" bg2 w-[45vh] h-[45vh] md:w-[70vh] md:h-[70vh] rounded-full absolute md:left-[-8rem] md:top-[-12rem]  left-[-5rem] top-[-6rem]"></span>
         <motion.span 
          transition={{ duration: 2, repeat:Infinity, repeatType:'loop',  ease: "easeInOut"}}
          animate={{
