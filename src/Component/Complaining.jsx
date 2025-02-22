@@ -58,7 +58,7 @@ const Complaining = ({complain,User,setUser,setMobile, setComplainMessage,setEma
            }}
         
        className=" w-[2.2rem] h-[2.2rem] bg5 absolute right-[3.8rem] top-[3rem] md:left-[26rem] md:top-[3rem] rounded-full z-40 transision-all duration-600 ease "></motion.span>
-        <span className=" border-[#aeb8ac] border-[.2rem] border w-[35vh] h-[35vh] md:w-[50vh] md:h-[50vh] rounded-full absolute left-[4.5rem] top-[-5rem] md:left-[5rem] md:top-[-4rem]" ></span>
+        <span className=" border-[#aeb8ac] border-[.2rem] border w-[35vh] h-[35vh] md:w-[50vh] md:h-[50vh] rounded-full absolute left-[3.8rem] top-[-5rem] md:left-[5rem] md:top-[-4rem]" ></span>
       
       </div>
 
