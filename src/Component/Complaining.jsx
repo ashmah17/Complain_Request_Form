@@ -78,7 +78,7 @@ const Complaining = ({complain,User,setUser,setMobile, setComplainMessage,setEma
              }
            <Link to='/review'>
            
-               <p className=" text-right m-2 cursor-pointer text-gray-500">Review?</p>
+               <p className=" text-right m-1 cursor-pointer text-gray-500">Review?</p>
            </Link>
            <button onClick={handleSubmit} className="p-3 rounded bg-[#586c55;] text-white mt-4">Submit</button>
       </div>

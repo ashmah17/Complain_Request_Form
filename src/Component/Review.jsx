@@ -79,7 +79,7 @@ const Review = ({ User,setUser,setMobile, setReviewMessage,setEmail,ReviewMessag
         }
       <Link to='/Complain'>
       
-          <p className=" text-right m-2 cursor-pointer text-gray-500">Complain?</p>
+          <p className=" text-right m-1 cursor-pointer text-gray-500">Complain?</p>
       </Link>
       <button onClick={handleSubmit} className="p-3 rounded bg-[#586c55;] text-white mt-4">Submit</button>
     </div>
