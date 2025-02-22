@@ -31,7 +31,7 @@ const Complaining = ({complain,User,setUser,setMobile, setComplainMessage,setEma
   return (
     <div className=' w-full h-[100vh] bg flex flex-col justify-between items-center '>
       <div className="w-full relative h-[30vh]  ">
-      <span className=" bg2 w-[48vh] h-[48vh] md:w-[70vh] md:h-[70vh] rounded-full absolute md:left-[-8rem] md:top-[-12rem]  left-[-5rem] top-[-7rem]"></span>
+      <span className=" bg2 w-[45vh] h-[45vh] md:w-[70vh] md:h-[70vh] rounded-full absolute md:left-[-8rem] md:top-[-12rem]  left-[-5rem] top-[-7rem]"></span>
         <motion.span 
          transition={{ duration: 2, repeat:Infinity, repeatType:'loop',  ease: "easeInOut"}}
          animate={{
@@ -39,7 +39,7 @@ const Complaining = ({complain,User,setUser,setMobile, setComplainMessage,setEma
              y: [0, -10, 0, -10, 0],
            }}
         
-            className=" w-[8rem] h-[8rem]  md:w-[12rem] md:h-[12rem] bg3 absolute  rounded-full z-40 left-[1px] top-[-1rem] md:left-[-3rem] md:top-[-2rem] transision-all duration-600 ease-in-out"></ motion.span>
+            className=" w-[8rem] h-[8rem]  md:w-[12rem] md:h-[12rem] bg3 absolute  rounded-full z-40 left-[-1rem] top-[-1rem] md:left-[-3rem] md:top-[-2rem] transision-all duration-600 ease-in-out"></ motion.span>
         <motion.span 
         initial={{x:0, y:0}}
         transition={{ duration: 2, repeat:Infinity, repeatType:'loop',  ease: "easeInOut"}}
