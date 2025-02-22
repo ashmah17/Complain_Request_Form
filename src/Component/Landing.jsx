@@ -6,8 +6,8 @@ const Landing = () => {
   return (
     <div className='justify-center bg w-full h-[100vh] flex flex-col items-center'>
        <div className='flex flex-col items-center'>
-            <h1 className="text-7xl m-2 text-[#324b2e] ">Welcome</h1>
-            <h3 className="text-[1rem] text-center font-semibold tracking-[.9rem]  text-[#849882]">Arora Sceret Scent</h3>
+            <h1 className="text-5xl m-2 text-[#324b2e] ">Welcome</h1>
+            <h3 className="text-[.8rem] text-center font-semibold tracking-[.5rem]  text-[#849882]">Arora Sceret <br /> Scent</h3>
        </div>
        <p className=" text-[#849882] w-[70%] font-semibold text-center text-[.8rem] mt-4">
           Endulge your senses in a world of unforgettable fragrances at 
@@ -15,7 +15,7 @@ const Landing = () => {
            exploring a new aroma, we offer an enchanting collection that 
            will transport you to a place of luxury and elegance.
        </p>
-       <div className='relative top-[-1.6rem]  flex  justify-center'>
+       <div className='relative top-[-1.6rem] flex  justify-center'>
             <img src={flower} className=" w-[50%] opacity-[30%] top-20 rotate-[-30deg]" />
                <div className='flex left-[1.8rem]  bottom-[2rem] absolute w-[50%] '>
                     <Link to='/Complain'>
@@ -27,8 +27,6 @@ const Landing = () => {
                </div>
             </div>
        <div>
-        <p className="text-[#849882]"> Thank you for your patronage
-             </p>
        </div>
     </div>
   )
