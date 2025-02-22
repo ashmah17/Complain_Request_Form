@@ -40,7 +40,7 @@ const Review = ({ User,setUser,setMobile, setReviewMessage,setEmail,ReviewMessag
            y: [0, -10, 0, -10, 0],
          }}
       
-          className=" w-[8rem] h-[8rem]  md:w-[12rem] md:h-[12rem] bg3 absolute  rounded-full z-40 left-[1px] top-[-1rem] md:left-[-3rem] md:top-[-2rem] transision-all duration-600 ease-in-out"></ motion.span>
+          className=" w-[8rem] h-[8rem]  md:w-[12rem] md:h-[12rem] bg3 absolute  rounded-full z-40 left-[-1rem] top-[-1.5rem] md:left-[-3rem] md:top-[-2rem] transision-all duration-600 ease-in-out"></ motion.span>
       <motion.span 
       initial={{x:0, y:0}}
       transition={{ duration: 2, repeat:Infinity, repeatType:'loop',  ease: "easeInOut"}}
@@ -49,7 +49,7 @@ const Review = ({ User,setUser,setMobile, setReviewMessage,setEmail,ReviewMessag
            y: [0, -10, 0, -10, 0], 
          }}
       
-          className=" w-[4.5rem] h-[4.5rem] md:w-[6rem] md:h-[6rem]  bg4 absolute left-[8rem] bottom-[1rem] md:left-[6rem] md:top-[13rem] rounded-full z-40 transision-all duration-600 ease "></motion.span>
+          className=" w-[4.5rem] h-[4.5rem] md:w-[6rem] md:h-[6rem]  bg4 absolute left-[8rem] bottom-[.3rem] md:left-[6rem] md:top-[13rem] rounded-full z-40 transision-all duration-600 ease "></motion.span>
      < motion.span 
      initial={{x:0, y:0}}
      transition={{ duration: 2, repeat:Infinity, repeatType:'loop',  ease: "easeInOut"}}
@@ -64,7 +64,7 @@ const Review = ({ User,setUser,setMobile, setReviewMessage,setEmail,ReviewMessag
     </div>
 
 
-    <div className='p-5 rounded-xl bg-[#fdfdfdcb] mb-[3rem]  flex flex-col md:w-[50%] w-[90%]'>
+    <div className='p-5 rounded-xl bg-[#fdfdfdcb] mb-[1.5rem]  flex flex-col md:w-[50%] w-[90%]'>
         {
             review.map((detail)=>(
                 <>
